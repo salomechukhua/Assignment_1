@@ -1,48 +1,54 @@
 * {
   padding: 0;
   margin: 0;
+  max-width: 1365px;
 }
 
-.container{
-  height: 80px;
-  width: 100%;
-  background-color: #FFFFFF;
+.container {
+  width: 1200px;
+  font-size: 0px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.navigation {
-  float: left;
+.clearfix:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.header {
+  background-color: #ffffff;
+  height: 100px;
 }
 
 .logo {
-  float: left;
   width: 200px;
-  margin-top: 10px;
-  padding-left: 120px;
+  padding-right: 85px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 60px;
+  /*padding-left: 120px;*/
   background-repeat: no-repeat;
   background-size: contain;
 }
 
 .navigation {
-  width: 500px;
-  height: 70px;
-  text-align: center;
-  margin-top: 10px;
+  display: inline-block;
+  vertical-align: middle;
   color: #3D58A6;
 }
 
 .navigation ul {
-  width: 500px;
-  height: 70px;
-  margin-right: 7px;
-  margin-left: 7px;
+  margin-right: 15px;
+  margin-left: 15px;
 }
 
-.navigation li {
-  width: 100px;
-  height: 20px;
+.navigation ul li {
   font-size: 20px;
   font-family: "Roboto";
   display: inline-block;
+  padding: 0 15px;
 }
 
 a.class1 {
@@ -54,20 +60,43 @@ a.class1:hover {
   opacity: 0.5;
 }
 
+.burger{
+	width: 61px;
+	height: 61px;
+	background-image: url(burger.svg);
+	display: none;
+	float: right;
+	margin-right: 30px;
+}
+/*
+.search{
+	width: 40px;
+	height: 40px;
+}
+.search i{
+    font-size: 40px;
+}
+.social-icon{
+	display: none;
+}
+
+.social-icon li {
+	display: inline-block;
+	vertical-align: middle;*/
+
+/*banner*/
 .banner-container {
-  height: 520px;
   background-color: #E6E6E6;
   display: block;
 }
 
 .banner {
-  width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
   position: relative;
+  width: 100%;
+  padding: 30px 0;
 }
 
-.banner img {
+.container .banner img {
   display: block;
   width: 100%;
   padding-top: 30px;
@@ -79,71 +108,76 @@ a.class1:hover {
   font-size: 30px;
   color: #E6E6E6;
   position: absolute;
-  left: 10px;
-  bottom: 10px;
+  left: 30px;
+  bottom: 60px;
 }
 
 .logo-html {
   position: absolute;
   right: 30px;
-  bottom: 30px;
-  width: 95px;
+  bottom: 80px;
+  width: 100px;
 }
+/*ბანერი*/
 
+/*ვიდეო*/
 .video-container {
-  height: 500px;
   background-color: #363E97;
-  display: block;
+
+}
+.video-container a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
-.video-container h4 {
+.video-container h1 {
   color: #ffffff;
   font-family: "Roboto";
+<<<<<<< Updated upstream
   font-size: 25px;
   margin-left: 120px;
   padding-top: 30px;
+=======
+  font-size: 24px;
+  margin: auto 0px;
+  padding: 30px 0;
+>>>>>>> Stashed changes
 }
 
 .video {
-  width: 1050px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.video-1 {
   display: inline-block;
-  width: 48%;
-  height: 280px;
   background-color: #ffffff;
-  padding-top: 50px;
-  margin-right: 10px;
-  margin-top: 20px;
+  width: 570px;
+  height: 320px;
+  margin: auto 15px;
   position: relative;
+  margin-bottom: 90px;
 }
 
-.video-2 {
-  display: inline-block;
-  width: 48%;
-  height: 280px;
-  background-color: #ffffff;
-  padding-top: 50px;
-  margin-top: 20px;
+#left {
+  margin-left: 0px;
+}
+
+#right {
   float: right;
-  position: relative;
+  margin-right: 0px;
 }
 
-.text {
-  position: absolute;
-  top: 45%;
-  left: 20%;
+.video p {
   font-family: "Roboto";
+  font-size: 15px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
+/*video*/
 
+/*news*/
 .news-container {
-  height: 450px;
   background-color: #BDCCD4;
-  display: block;
 }
+<<<<<<< Updated upstream
 
 .news-container h4 {
   color: #ffffff;
@@ -151,100 +185,141 @@ a.class1:hover {
   font-size: 25px;
   margin-left: 120px;
   padding-top: 30px;
-}
+=======
+body#newspage .container_test {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 60px;
+  }
 
-.news {
-  width: 1050px;
-  height: inherit;
+body#newspage .news-sacdeli .news {
+    width: 270px;
+    height: 270px;
+    display: inline-block;
+    vertical-align: middle;
+    margin: auto 15px;
+    padding-top: 60px;
+  }
+
+body#newspage .news-sacdeli .news:nth-child(5){
+    padding-top: 35px;
+  }
+
+body#newspage .news-sacdeli .news:nth-child(6){
+    padding-top: 35px;
+  }
+
+body#newspage .news-sacdeli .news:nth-child(7){
+    padding-top: 35px;
+  }
+
+body#newspage .news-sacdeli .news:nth-child(8){
+    padding-top: 35px;
+  }
+
+body#homepage .container_test {
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 20px;
+  padding-bottom: 60px;
+>>>>>>> Stashed changes
 }
 
-.lab {
-  width: 250px;
-  float: left;
-  margin-right: 15px;
+.container_test {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 60px;
 }
 
-.lab img {
-  width: inherit;
+.news-container .container_test h1{
+  color: #3D58A6;
+  font-family: "Roboto";
+  font-size: 20px;
   display: block;
-  margin: 0 auto;
+  margin-left: 0px;
+  padding: 30px 0px;
 }
 
-.marketing {
-  width: 250px;
-  float: left;
-  margin-right: 15px;
+.news-container .container_test > h1{
+	padding: 30px 0;
 }
 
-.marketing img {
-  width: inherit;
+.news-container a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.news-sacdeli{
+  display: inline-block;
+}
+
+.news-sacdeli .news {
+  width: 270px;
+  height: 270px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: auto 15px;
+}
+
+.news-container .news img {
   display: block;
-  margin: 0 auto;
+  width: 100%;
 }
 
-.coding {
-  width: 250px;
-  float: left;
-  margin-right: 15px;
+.news-container .container_test .news:nth-child(1){
+  margin-left: 0px;
 }
 
-.coding img {
-  width: inherit;
-  display: block;
-  margin: 0 auto;
-}
-
-.design {
-  width: 250px;
-  float: right;
+.news-container .container_test .news:nth-child(4){
   margin-right: 0px;
 }
 
-.design img {
-  width: inherit;
-  display: block;
-  margin: 0 auto;
-}
-
-.name {
-  width: inherit;
-  height: 50px;
-  display: block;
-  margin: 0 auto;
+.news-title {
   background-color: #E6E6E6;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
   color: #333333;
-  text-transform: uppercase;
-  font-family: "Roboto";
-  font-size: 20px;
+  font-family: "Roboto"
 }
 
-.name p {
-  text-align: left;
-  margin-left: 10px;
-  padding-top: 10px;
+.news-title h2 {
+  padding-left: 15px;
+  box-sizing: border-box;
 }
+/*news*/
 
-
+/*featured*/
 .featured-container {
-  height: 350px;
   background-color: #E6E6E6;
   display: block;
 }
 
-.featured-container h4 {
-  color: #ffffff;
+.featured-container h1 {
+  color: #000000;
   font-family: "Roboto";
+<<<<<<< Updated upstream
   font-size: 25px;
   margin-left: 120px;
   padding-top: 30px;
+=======
+  font-size: 20px;
+  display: block;
+  margin-left: 0px;
+  padding: 30px 0px;
+}
+
+.featured-container a {
+  color: #000000;
+  text-decoration: none;
+>>>>>>> Stashed changes
 }
 
 .featured {
-  width: 1050px;
-  height: inherit;
+  width: inherit;
+  height: 350px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 20px;
@@ -252,13 +327,31 @@ a.class1:hover {
 
 .featured-1 {
   display: inline-block;
-  width: 500px;
+  width: 570px;
   height: 225px;
   background-color: #ffffff;
   margin-right: auto;
   margin-left: 0px;
   padding-top: 10px;
   margin-right: 10px;
+}
+
+.readmore-1 {
+  float: right;
+  height: 30px;
+  width: 70px;
+  font-size: 15px;
+  color: #3D58A6;
+  margin-right: 0px;
+}
+
+.readmore-2 {
+  float: right;
+  height: 30px;
+  width: 70px;
+  font-size: 15px;
+  color: #3D58A6;
+  margin-right: 0px;
 }
 
 .title-web {
@@ -286,11 +379,12 @@ a.class1:hover {
   top: 10px;
   bottom: 10px;
   margin-right: 30px;
+  margin-left: 40px;
 }
 
 .featured-2 {
   display: inline-block;
-  width: 500px;
+  width: 570px;
   height: 225px;
   background-color: #ffffff;
   float: right;
@@ -326,13 +420,23 @@ a.class1:hover {
 }
 
 .MainFooter {
-  height: 60px;
   background-color: #FFFFFF
+}
+
+.container_footer {
+  height: 60px;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .MainFooter p1 {
   float: left;
+<<<<<<< Updated upstream
   margin-left: 120px;
+=======
+  margin-left: 0px;
+>>>>>>> Stashed changes
   font-family: "Myriad Pro";
   font-size: 15px;
   padding-top: 25px;
@@ -341,7 +445,11 @@ a.class1:hover {
 
 .MainFooter p2 {
   float: right;
+<<<<<<< Updated upstream
   margin-right: 120px;
+=======
+  margin-right: 0px;
+>>>>>>> Stashed changes
   font-family: "Myriad Pro";
   font-size: 15px;
   padding-top: 25px;
